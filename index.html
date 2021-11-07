@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Number Game</title>
+</head>
+
+<body>
+  <header class="header">
+    <h3 id="name">Welcome 🙏</h3>
+    <h3 id="htp"> <a href="#">How to play?</a></h3>
+  </header>
+
+  <div class="title">
+    <h1>Guess My Number!</h1>
+    <h3>(Between 1-20)</h3>
+    <img src="/images/guess.png" alt="guess_image">
+  </div>
+
+  <section class="main">
+
+    <ul class="game">
+      <li><input type="number" name="ans" id="ans" placeholder="input here..."></li>
+      <li><button id="lock">Lock -> 🔒</button></li>
+    </ul>
+
+    <div class="stats">
+      <ul>
+        <li>
+          <img src="/images/check.png" alt="response" id="imgresponse">
+          <span id="response">Make a guess!</span>
+        </li>
+      </ul>
+      <ul>
+        <li><img src="/images/score.png" alt="score" id="imgscore">
+          <span id="score">Current Score: 5 </span></li>
+        <li><img src="/images/high-score.png" alt="highscore" id="imghighscore">
+          <span id="high_score"> Highscore: 0</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="reset-class">
+      <button id="reset">Play Again 🔁</button>
+    </div>
+    <p id="eod">Made with ❤ by Suraj Katyayan.</p>
+  </footer>
+
+
+  <div class="intro">
+    <h2 class="">Hello World, what is your name?</h2>
+    <button class="close">❌</button>
+    <input type="text" class="name" placeholder="enter your name">
+    <button class="play">Play ▶</button>
+  </div>
+
+
+
+  <div class="overlay"></div>
+
+  <div class="howtoplay">
+    <h3>How to play? 🎮</h3> <button class="closehtp">❌</button>
+
+    <ul>
+      <li>There is a random number genrated by the computer between 1 and 20, including both ends. </li>
+      <li>You need to make a guess in the space provided and lock it using the key. </li>
+      <li>If the computer generated number is higher than the number you guessed, it tells you - too low; and if your
+        guessed number is higher than the computer generated number, it says two high .</li>
+      <li>You have 5 chances to make the guess right after which you lose the game. </li>
+      <li>You can always press, play again to, well, play again.</li>
+      <li>Let's play! 🎯</li>
+    </ul>
+  </div>
+
+
+  <script src="script.js">
+  </script>
+</body>
+
+</html>
